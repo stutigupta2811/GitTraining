@@ -1,0 +1,43 @@
+HelloWorld
+
+public class HelloWorld { public static void main(String[] args) { System.out.println("Hello World"); } }
+
+IfElse
+
+public class IfElse { public static void main(String[] args) { int age = 21; if (age <= 18) { System.out.println("User is 18 or younger"); } else if (age < 40) { System.out.println("User is between 19 & 39"); } else { System.out.println("User is above 39"); } } }
+
+SwitchCase
+
+public class SwitchCase { public static void main(String args[]){ //char grade = args[0].charAt(0); char grade = 'C'; switch(grade)
+
+{ case 'A' : System.out.println("Excellent!"); break; case 'B' : case 'C' : System.out.println("Well done"); break; case 'D' : System.out.println("You passed"); case 'F' : System.out.println("Better try again"); break; default : System.out.println("Invalid grade"); } System.out.println("Your grade is " + grade); } }
+
+ForEachLoop
+
+public class ForEachLoop { public static void main(String[] args) { String [] names ={"James", "Larry", "Tom", "Lacy"}; for( String name : names ) { System.out.println( name ); } } }
+
+For Loop
+
+public class ForLoop { public static void main(String[] args) { int [] test = new int[]{1,4,5,7}; for (int i = 0; i < test.length; i ++) { int intValue = test[i]; System.out.println("value of 'intValue' variable is : " + intValue); } } }
+
+NamedLoops
+
+public class NamedLoops { public static void main(String[] args) { int i, j; int[][] arr = new int[][]{ { 00, 01, 02 }, { 10, 11, 12 }, { 20, 21, 22 } }; } }
+
+StringBuilderTest
+
+public class StringBuilderTest { public static void main(String[] args) { StringBuilder sb = new StringBuilder(); for (int i = 0; i < 100; i++) { sb.append(", " + i); } System.out.println("s value is " + sb.toString()); } }
+
+StringBufferTest
+
+public class StringBufferTest { public static void main(String[] args) { StringBuffer sb = new StringBuffer(); for (int i = 0; i < 100; i++) { sb.append(", " + i); } System.out.println("s value is " + sb.toString()); } }
+
+StringTokenizerTest
+
+import java.util.StringTokenizer; public class StringTokenizerTest {
+
+public static void main(String[] args) { StringTokenizer st = new StringTokenizer("my name is khan", " "); while(st.hasMoreTokens()) { System.out.println(st.nextToken()); } } }
+
+CoolClass
+
+public class CoolClass { public static void main(String[] args) { class Inner { void wut() { System.out.println("wut"); } } new Inner().wut();
